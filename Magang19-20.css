@@ -1,0 +1,114 @@
+body {
+    margin: .5em;
+    background: lightgrey;
+    font-family: Calibri;
+}
+header {
+    height: 8em;
+    background: rgb(1, 126, 28);
+    border-bottom: 1em solid yellow;
+    box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    display: flex;
+}
+header > img {
+    height: 100%;
+}
+header > .header-text {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+header > .header-text > h2, h3 {
+    margin: 0;
+}
+header > .header-text > h3 > a {
+    color: white;
+}
+header > .header-text > h3 > a:hover {
+    color: lightgray;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 1em 0;
+    font-size: large;
+}
+.left-navbar {
+    background: rgb(0, 226, 49);
+    height: auto; width: 15%;
+    border-left: 1em solid yellow;
+    padding: 1em;
+    box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.5);
+    font-family: Arvo;
+    font-size: .7em;
+}
+.left-navbar > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    background: rgb(0, 180, 39);
+    color: white;
+    text-decoration: none;
+    border-right: .5em solid yellow;
+}
+.left-navbar > a:hover {
+    transform: translateX(1em);
+    transition: 0.2s;
+}
+.left-navbar > img {
+    width: 100%;
+}
+.main {
+    background: rgb(2, 177, 40);
+    width: 80%;
+    box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.5);
+}
+.inner-main {
+    height: auto;
+    background: rgb(250, 249, 249);
+    border-right: 1em solid yellow;
+}
+.inner-main > .bio {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.inner-main > h2 {
+    background: lightgrey;
+    padding: .5em;
+    margin-left: 0;
+}
+.inner-main > .bio > p {
+    margin-left: 10px;
+}
+footer {
+    background: rgb(1, 126, 28);
+    height: 8em;
+    border-top: 1em solid yellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.5);
+}
+footer > p > a {
+    color: white;
+}
+@media (max-width: 1100px) {
+    .left-navbar {
+        font-size: x-small;
+    }
+}
+@media (max-width: 720px) {
+    header > .header-text {
+        font-size: small;
+    }
+    .content {
+        font-size: large;
+    }
+    .left-navbar {
+        font-size: xx-small;
+    }
+}
