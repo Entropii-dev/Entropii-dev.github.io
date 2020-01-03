@@ -29,7 +29,7 @@ header > .header-text > h3 > a {
 header > .header-text > h3 > a:hover {
     color: lightgray;
 }
-.content {
+main {
     display: flex;
     justify-content: space-between;
     margin: 1em 0 1em 0;
